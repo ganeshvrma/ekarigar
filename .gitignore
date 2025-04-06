@@ -3,6 +3,7 @@
 application/cache/*
 !application/cache/index.html
 
+
 application/logs/*
 !application/logs/index.html
 
@@ -24,6 +25,8 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 .vscode/
 .idea/
 .DS_Store
+git remote add origin https://github.com/ganeshvrma/ekarigar.git
+
 
 ## Sublime Text cache files
 *.tmlanguage.cache

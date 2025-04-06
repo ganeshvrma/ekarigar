@@ -49,11 +49,11 @@
                         <div class="progress-bar  progress-bar-animated" style="width: 0%;" id="progressBar"></div>
                     </div>
                     <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Enter Name" required>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Enter Email" oninput="this.value = this.value.toLowerCase()" required>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" oninput="this.value = this.value.toLowerCase()" required>
                     <label for="phone">Phone Number:</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Enter phone number" pattern="\d{10}" required>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" pattern="\d{10}" required>
                     <label for="countries">Select a country:</label>
                     <select id="countries" name="country" required>
                         <option value="">--Select a country--</option>
@@ -447,14 +447,11 @@ document.getElementById('phone').addEventListener('input', function() {
                     if (response.data.session1 == 1) $("#session1").prop("checked", true);
                     if (response.data.session2 == 1) $("#session2").prop("checked", true);
                     if (response.data.attendance !== null && response.data.attendance !== undefined) {
-    $("input[name='attendance']").prop("checked", false); // Uncheck all first
-    $("input[name='attendance'][value='" + response.data.attendance + "']").prop("checked", true);
-} else {
-    console.warn("Attendance data is missing or null.");
-}
-
-
-
+                 $("input[name='attendance']").prop("checked", false); // Uncheck all first
+                  $("input[name='attendance'][value='" + response.data.attendance + "']").prop("checked", true);
+                 } else {
+                    console.warn("Attendance data is missing or null.");
+                    }
                     $("#diet").val(response.data.diet);
 
                     $("#ticketType").val(response.data.ticket_type);
@@ -466,12 +463,6 @@ document.getElementById('phone').addEventListener('input', function() {
                 }
             });
         }
-
-
-
-
-
-
 
         $(document).ready(function() {
             $(".logoutBtn").click(function(event) {

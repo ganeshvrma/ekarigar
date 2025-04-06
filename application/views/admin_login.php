@@ -3,11 +3,15 @@
 <head>
     <title>Admin Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   <style>
-    body{
-        background: url('assets/images/bg.svg') ;
-    }
-   </style>
+    <style>
+body {
+    background: url("<?php echo base_url('assets/images/bg.svg'); ?>");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+</style>
+
 
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100">

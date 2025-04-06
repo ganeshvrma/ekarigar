@@ -6,27 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      body {
+    background: url("<?php echo base_url('assets/images/bg.svg'); ?>");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+        }
+     </style>
 </head>
 
-<body >
-    <div class="d-flex justify-content-center align-items-center vh-100">
+<body class="d-flex justify-content-center align-items-center vh-100">
      <div class="card p-4" style="width: 400px;">
             <div id="loginPage" class="login-page">
                 <h3 class="text-center"> User Login</h3>
-                <label for="email">Email</label>
-                <input type="text" id="loginEmail" placeholder="Enter your email address" class="form-control">
+                <div class="form-group">
+                <label for="email">User Name</label>
+                <input type="text" id="loginEmail" placeholder="Enter your registered email address" class="form-control">
+                 </div>
+                 <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="loginPassword" placeholder=" Enter uour password" class="form-control">
+                <input type="password" id="loginPassword" placeholder=" Enter your password" class="form-control">
+                 </div>
                 <div class="d-flex justify-content-between ">
-                    <a href="#" class="btn btn-primary pt-4" id="loginBtn">Login</a>
-                    <a href="#" class="btn btn-danger pt-4" id="closeLogin">Close</a>
+                    <a href="#" class="btn btn-primary " id="loginBtn">Login</a>
+                    <a href="<?php echo base_url('FormController'); ?>" class="btn btn-secondary " id="closeLogin">Sign in </a>
                </div>
             </div>
         </div>
-    </div>
+  
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
