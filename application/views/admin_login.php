@@ -24,12 +24,12 @@ body {
 
         <form method="post" action="<?php echo site_url('admin/authenticate'); ?>">
             <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" class="form-control" required>
+                <label>Username</label>
+                <input type="email" name="email" class="form-control" placeholder="enter your email address" required>
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" name="password" class="form-control" required>
+                <input type="password" name="password" placeholder="enter your password" class="form-control" required>
             </div>
             <button type="submit" class="btn btn-primary btn-block">Login</button>
         </form>
