@@ -31,7 +31,7 @@
                  </div>
                 <div class="d-flex justify-content-between ">
                     <a href="#" class="btn btn-primary " id="loginBtn">Login</a>
-                    <a href="<?php echo base_url('FormController'); ?>" class="btn btn-secondary " id="closeLogin">Sign in </a>
+                    <a href="<?php echo base_url('FormController'); ?>" class="btn btn-secondary " >Sign in </a>
                </div>
             </div>
         </div>
